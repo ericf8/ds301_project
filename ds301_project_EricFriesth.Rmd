@@ -11,8 +11,24 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 
-df = read.csv('US_Accidents_clean.csv')
+data = read.csv('US_Accidents_clean.csv')
+head(data)
+
+summary(data)
+
+df = data[, -4]
+df = df[, -6]
+
 head(df)
+
+```
+
+```{r}
+
+library(tidyverse)
+library(ggplot2)
+
+ggplot(df, aes(x = Severity, fill = State)) + geom_histogram()
 
 ```
 

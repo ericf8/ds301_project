@@ -1,0 +1,38 @@
+---
+title: "ds301_project_EricFriesth"
+author: "Eric Friesth"
+date: "11/21/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+
+df = read.csv('US_Accidents_clean.csv')
+head(df)
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
